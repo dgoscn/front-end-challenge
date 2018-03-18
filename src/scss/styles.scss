@@ -1,0 +1,32 @@
+@import "./variables";
+
+
+.header{
+    background-image: url("../images/showcase-image.jpg");
+    background-size: cover;
+}
+
+.form{
+    background: rgba(0, 0, 0, .9);
+    color: $color-gray;
+
+    &-title{
+        font-size: 18px;
+        font-weight: bold;
+        font-weight: 300;
+        margin-bottom: 0px;
+        text-align: center;
+           
+    }
+}
+
+.promo{
+    background: #543039;
+}
+
+//.logo-toyota{
+ //   margin-left: 260px;
+//
+//
+//
+//}
