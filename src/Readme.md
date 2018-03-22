@@ -15,5 +15,7 @@ Para as dependências do bootstrap:
 
 >npm install bootstrap jquery popper.js --save
 
-Por fim, sendo usada a versão 4 do bootstrap juntamente com jquery /popper.js/. 
+Por fim, executamos:
+
+>gulp
 
