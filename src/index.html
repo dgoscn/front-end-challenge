@@ -1,156 +1,372 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html  lang="pt">
     <head>
-        <title>Bootstrap 4 Layout</title>
+        <title>Auto Force</title>
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
         <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/bootstrap.css">
         <link rel="stylesheet" href="/css/styles.css">
     </head>
+    <body>
 
-<body>
-<div class="header col-xs-12">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark ">
-            <a class="navbar-brand" href="#">
-                <img src="./images/logo.png" alt="">
-            </a>
+        <!-- Inicio com nav bar, contendo as informaçoes da empresa -->
+        <div class="header col-xs-12">
+            <div class="container">
+                <nav class="navbar navbar-light navbar-expand-lg scroll-to-fixed-fixed navbar-dark ">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/logo.png" alt="">
+                    </a>
+            
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="navbar" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"> NOSSOS VEÍCULOS</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#"> carro um</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#"> carro dois</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#"> carro tres</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">SERVIÇOS</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">VENDAS DIRETAS</a>
-                        <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#"> vendedor a</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#"> vendedor b</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#"> vendedor c</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">TELEFONES</a>
-                            <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#"> telefone 1</a>
-                                    <a class="dropdown-item" href="#"> telefone 2</a>
-                                    <a class="dropdown-item" href="#"> telefone 3</a>
+                    <div class="navbar" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"> NOSSOS VEÍCULOS</a>
+                                <div class="dropdown-menu">
+                                    
+                                    <a class="dropdown-item" href="#"> carro um</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"> carro dois</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"> carro tres</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SERVIÇOS</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">VENDAS DIRETAS</a>
+                                <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#"> vendedor a</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#"> vendedor b</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#"> vendedor c</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">TELEFONES</a>
+                                <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#"> telefone 1</a>
+                                        <a class="dropdown-item" href="#"> telefone 2</a>
+                                        <a class="dropdown-item" href="#"> telefone 3</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <a class="logo-toyota float-right" href="#">
+                        <img height="19" src="./images/logo-toyota.png" alt="">
+                    </a>
+                </nav>
+                
+                <div class="row">
+                    <!-- Campo obtendo as informacoes do Form (Muita coisa tirada do botostrap 4 -->
+                    <div class="main-form col-sm-4 col-md-4 col-lg-4">
+                        <form action="#">
+                            <div class="form-header">
+                                <p class="form-title">SIMULAR FINANCIAMENTO</p>
+                                <p class="subtitle">Escolha a parcela que cabe no seu bolso.</p>
                             </div>
-                        </li>
-                </ul>
-            </div>
-            <a class="logo-toyota float-right" href="#">
-                    <img height="19" src="./images/logo-toyota.png" alt="">
-            </a>
-        </nav>
+                            <hr>
+                            <div class="form-body">
+                                <div class="form-group">
+                                    <label for="versao">Escolha a versão</label>
+                                    <select class="form-control" name="versao" id="versao">
+                                        <option value="1.3">1.3</option>
+                                        <option value="2.0">2.0</option>
+                                    </select>
+                                </div>
 
-        
-        <div class="main-form col-sm-12 col-md-6 col-lg-4">
-                <form action="#">
-                    <header class="form-header">
-                        <p class="form-title">Simular financiamento</p>
-                        <span class="subtitle">Escolha a parcela que cabe no seu bolso.</span>
-                    </header>
-                    <hr>
-                    <div class="form-body">
-                        <div class="form-group">
-                            <label for="versao">Escolha a versão</label>
-                            <select class="form-control" name="versao" id="versao">
-                                <option value="1.3">1.3</option>
-                                <option value="1.8">1.8</option>
-                            </select>
-                        </div>
-                        <hr class="mt-0">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Nome*">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="E-mail*">
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" class="form-control input-phone" placeholder="Telefone*">
-                        </div>
-                        <div class="form-group">
-                            <label>Número de parcelas*</label>
-                            <br>
-                            <div class="form-radios">
-                                <div class="form-radio">
-                                    <input type="radio" class="custom-radio" name="parcelas" value="12">
+                                <hr class="mt-0">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Nome*">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="E-mail*">
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control input-phone" placeholder="Telefone*">
+                                </div>
+                                <div class="form-group">
+                                    <label>Número de parcelas*</label><br>
+                                    <input name="parcelas" value="12" type="radio">
                                     <label>12</label>
                                 </div>
-                                <div class="form-radio">
-                                    <input type="radio" class="custom-radio" name="parcelas" value="24">
+                                <div>
+                                    <input  name="parcelas" value="24" type="radio">
                                     <label>24</label>
                                 </div>
-                                <div class="form-radio">
-                                    <input type="radio" class="custom-radio" name="parcelas" value="36">
+                                <div>
+                                    <input name="parcelas" value="36" type="radio">
                                     <label>36</label>
                                 </div>
-                                <div class="form-radio">
-                                    <input type="radio" class="custom-radio" name="parcelas" value="48">
+                                <div>
+                                    <input name="parcelas" value="48" type="radio">
                                     <label>48</label>
                                 </div>
+                            
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Valor de entrada*" name="valor_entrada" style="text-align: right;">
+                                </div>
+                                
+                                <div class="form-group position-relative">
+                                    <input class="custom-checkbox" type="checkbox" value="newsletter" id="newsletter">
+                                    <label class="form-check-label" for="newsletter">
+                                        Desejo receber ofertas exclusivas da PG Prime.
+                                    </label>
+                                </div>
+                                
+                                <div class="form-group form-group--submit-button">
+                                    <a class="btn btn-red bot bot-submit">SIMULAR FINANCIAMENTO</a>
+                                </div>
+                                
+                                <div class="form-group mb-0">
+                                    <a class="form-privacy-link" href="#">Política de privacidade</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control input-money" type="text" placeholder="Valor de entrada*" name="valor_entrada" style="text-align: right;">
-                        </div>
-                        <div class="form-group position-relative">
-                            <input class="custom-checkbox" type="checkbox" value="newsletter" id="newsletter">
-                            <label class="form-check-label" for="newsletter">
-                                Desejo receber ofertas exclusivas da PG Prime.
-                            </label>
-                        </div>
-                        <div class="form-group form-group--submit-button">
-                            <input type="submit" value="SIMULAR FINANCIAMENTO" class="btt ">
-                        </div>
-                        <div class="form-group mb-0">
-                            <a class="form-privacy-link" href="#">Política de privacidade</a>
+                        </form> 
+                    </div>
+
+                    <!--Informações do carro em destaque-->
+                    <div class="info-car col-sm-8 col-md-8 col-lg-8">
+                        <div class="info-car-upper">
+                            <h1 class="info-car-name m-0">Etios Hatch 2017</h1>
+                            <p class="info-car info-car-versao">X 1.3 MANUAL</p>
+                            <p class="info-car-describ">
+                                <span>de R$ 44.120,00</span><br>
+                                <span>por R$ 40.987,00</span><br>
+                                <span class="info-car-small-text">Consulte as Condições Comerciais.</span>
+                            </p>
                         </div>
                     </div>
-                </form>
-        
-        
-            </div>   
-        
-
-    </div>
-</div>
-    
-    <div class="promo">
-        <div class="container">
-            <div class="row">
-                <div class="promo-info col-sm-4">VAMO</div>
-                <div class="promo-info col-sm-4">VER</div>
-                <div class="promo-info col-sm-4">AQUI</div>
+                </div>
             </div>
-            
         </div>
-    </div>
-    
 
+        <!--Código relativo ao grid contendo informacoes promocionais -->
+        <div class="promo">
+            <div class="container">
+                <div class="row">
+                    <div class="mid-col col-sm-4 col-lg-4">
+                        <div class="mid-pri-linha">
+                            Imperdível
+                        </div>
+                        <div class="mid-seg-linha">
+                            TAXA ZERO %
+                        </div>
+                        <div class="mid-ter-linha">
+                            Always first off the line. Instant torque delivers full power in a heartbeat.
+                        </div>
+                    </div>
+                    
+                    <div class="mid-col col-sm-4 col-lg-4">
+                        <div class="mid-pri-linha">
+                            O carro mais
+                        </div>
+                        <div class="mid-seg-linha">
+                            SEGURO
+                        </div>
+                        <div class="mid-ter-linha">
+                            Always first off the line. Instant torque.
+                        </div>
+                    </div>
+
+                    <div class="mid-col col-sm-4 col-lg-4">
+                        <div class="mid-pri-linha">
+                            Bonús de até
+                        </div>
+                        <div class="mid-seg-linha">
+                            R$ 3 mil
+                        </div>
+                        <div class="mid-ter-line">
+                            Always first off the line. Instant torque delivers full power in a heartbeat.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!-- Campo relacionado as versoes dos carros disponíveis -->
+<div>
+    <section class="car-versions">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-3">
+                        <header>Versões</header>
+                    </div>
+                    <div class="col-sm-12 col-lg-9">
+                        <div style="max-width: 100%;">
+                            <div aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 451.25px;">
+                            <div style="float: none; list-style: outside none none; position: absolute; width: 825px; z-index: 50; display: block;" aria-hidden="false">
+                                <div class="row">
+                                    <div class="col-lg-6 text-sm-center">
+                                        <img src="images/car-example.png" alt="Mercedez A200">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <header>Informações gerais</header>
+                                        <div>
+                                          
+                                            <table class="table car-versions-features-list">
+                                                <tbody>
+                                                <tr>
+                                                    <td>Diâmetro/curso (mm):</td>
+                                                    <td>1000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>em rev/min:</td>
+                                                    <td>1000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>em rev/min:</td>
+                                                    <td>1000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cilindrada (cc):</td>
+                                                    <td>1000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cilindros/válvulas por cilindro:</td>
+                                                    <td>1000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>em rev/min:</td>
+                                                    <td>1000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Potência máxima EEC - Cv:</td>
+                                                    <td>1000</td>
+                                                </tr>
+                                                
+                                            </table>
+                                    </div>     
+                                </div>
+                            </div>
+                            
+                        </div>
+                </div>
+            </div>
+        </div>
+</section>
+</div>
+
+
+
+<!-- Parte Relacionada a galeria de carros, uma implementação que seria empregada, seria com o uso de js, para paginação com Carousel. -->
+<!-- Devido há algumas tentativas e não muito avanço, preferi deixar de maneira estática com html e css pra em um futuro, a aplicação do js-->
+<section class="carsgale">
+        <div class="container">
+            <header class="text-center">Conheça nossos carros</header>
+            
+            <div  style=" position: relative; height: 132px;">
+                <div style="width: 15000%; transform: translate3d(-0860px, 0px, 0px);">
+                    <div aria-hidden="true" style="float: left; list-style: outside none none; position: relative; width: 220px;">
+                    <div class="carslide">
+                        Classe A
+                    </div>
+                </div>
+                <div aria-hidden="true" style="float: left; list-style: outside none none; position: relative; width: 220px;">
+                    <div class="carslide">
+                        <img src="images/car-slideshow-2.png" alt="Classe C">
+                    </div>
+                    <div class="slideshow-cars-car-name">
+                        Classe C
+                    </div>
+                </div>
+                <div aria-hidden="true" style="float: left; list-style: outside none none; position: relative; width: 220px;">
+                    <div class="carslide">
+                        <img src="images/car-slideshow-3.png" alt="Classe CLA">
+                    </div>
+                    <div class="slideshow-cars-car-name">
+                        Classe CLA
+                    </div>
+                </div>
+                <div aria-hidden="true" style="float: left; list-style: outside none none; position: relative; width: 220px;">
+                    <div class="carslide">
+                        <img src="images/car-slideshow-1.png" alt="Classe A">
+                    </div>
+                    <div class="carslide">
+                        Classe A
+                    </div>
+                </div>
+                <div aria-hidden="true" style="float: left; list-style: outside none none; position: relative; width: 220px;">
+                    <div class="carslide">
+                        <img src="images/car-slideshow-2.png" alt="Classe C">
+                    </div>
+                    <div class="carslide">
+                        Classe C
+                    </div>
+                </div>
+                <div aria-hidden="true" style="float: left; list-style: outside none none; position: relative; width: 220px;">
+                    <div class="carslide">
+                        <img src="images/car-slideshow-1.png" alt="Classe A">
+                    </div>
+                    <div class="slideshow-cars-car-name">
+                        Classe A
+                    </div> 
+                </div>
+                <div aria-hidden="true" style="float: left; list-style: outside none none; position: relative; width: 220px;">
+                    <div class="carslide">
+                        <img src="images/car-slideshow-2.png" alt="Classe C">
+                    </div>
+                    <div class="slideshow-cars-car-name">
+                        Classe C
+                    </div>
+                </div> 
+                <div aria-hidden="true" style="float: left; list-style: outside none none; position: relative; width: 220px;">
+                    <div class="carslide">
+                        <img src="images/car-slideshow-3.png" alt="Classe CLA">
+                    </div>
+                    <div class="carslide">
+                        Classe CLA
+                    </div>
+                </div>
+                <div aria-hidden="true" style="float: left; list-style: outside none none; position: relative; width: 220px;">
+                    <div class="carslide">
+                        <img src="images/car-slideshow-1.png" alt="Classe A">
+                    </div>
+                    <div class="carslide">
+                        Classe A
+                    </div>
+                </div>
+              
+        
+</section>
+
+
+<!-- Info relacionada ao Rodapé -->
+<div>
+        <footer class="main-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-4 text-center text-lg-left">
+                            <img src="images/logo.png">
+                        </div>
+                        <div class="col-sm-12 col-lg-4 text-center">
+                            <p>© Copyright 2018 - Cliente - Todos os direitos
+                                reservados.</p>  
+                        </div>
+                    </div>
+                    <div class="row main-footer">
+                        <div class="col-lg-12 text-center">
+                            <img src="images/logo-autoforce@2x.png"  width="62">
+                        </div>
+                    </div>
+                </div>
+            </footer>
+   
+</div>
 
         
-
+        
+        <!-- nao cheguei a usar por conta de meu conhecimento limitado sobre JavaScript -->
         <script src="/js/jquery.min.js"></script>
         <script src="/js/popper.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>

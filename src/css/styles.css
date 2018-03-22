@@ -107,9 +107,20 @@
 .bottom {
   bottom: 0; }
 
+body {
+  margin: 0;
+  font-family: Open Sans,sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff; }
+
 .header {
   background-image: url("../images/showcase-image.jpg");
-  background-size: cover; }
+  background-size: cover;
+  padding-bottom: 15px; }
 
 .form {
   background: rgba(0, 0, 0, 0.9);
@@ -121,5 +132,139 @@
     margin-bottom: 0px;
     text-align: center; }
 
+.logo-toyota {
+  position: absolute;
+  right: 0; }
+
+.btn-red {
+  width: 100%; }
+
+.subtitle {
+  text-align: center; }
+
 .promo {
   background: #543039; }
+
+.descri-carro {
+  background: #212529; }
+
+.car-versions {
+  min-height: 465px;
+  background: transparent url("../images/bg-car-versions.jpg") no-repeat 50%;
+  background-size: cover; }
+
+.car-versions header {
+  padding: 25px 0;
+  font-size: 22px;
+  color: #fff; }
+
+.main-form {
+  background-color: rgba(23, 22, 22, 0.6);
+  padding: 25px 15px;
+  color: #fff; }
+
+@media (min-width: 576px) {
+  .col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100; }
+  .col-lg-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%; } }
+
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-auto, .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-auto, .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md-auto, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-auto {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+button, input {
+  overflow: visible; }
+
+button, input, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit; }
+
+.car-versions {
+  border-top: 1px solid rgba(120, 120, 120, 0.75); }
+
+input {
+  background-color: white;
+  cursor: text;
+  padding: 1px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial; }
+
+.bot-submit {
+  width: 100%;
+  color: #ffff;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: #b71d3e;
+  line-height: 1.4em; }
+
+.bot {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: .25rem; }
+
+.info-car {
+  color: #fff; }
+
+::-moz-selection {
+  background-color: #b71d3e;
+  color: #fff; }
+
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block; }
+
+.mid-pri-linha {
+  font-size: 24px; }
+
+.mid {
+  color: #fff; }
+
+.mid-seg-linha {
+  font-size: 38px;
+  color: #d33c5c; }
+
+.mid-col + .mid-col, .text-center {
+  border-left: 1px solid rgba(120, 120, 120, 0.1); }
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1140px; }
+
+.carsgale header {
+  font-size: 32px;
+  color: #2a2a2a;
+  position: relative;
+  margin-bottom: 70px; }
+
+element {
+  max-width: 1140px; }
+
+.main-footer {
+  padding: 25px 0;
+  background-color: #2a2a2a;
+  color: #797979;
+  font-size: 12px; }
