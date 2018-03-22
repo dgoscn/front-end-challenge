@@ -1,4 +1,4 @@
--Configurações para execução em diretório local-
+<h2> Configurações para execução em diretório local </h2>
 
 Fora utilizado ferramentas como node e gulp. 
 gulp: "É um JavaScript Task Runner"
