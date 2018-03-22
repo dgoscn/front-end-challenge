@@ -1,6 +1,6 @@
 <h2> Configurações para execução em diretório local </h2>
 
-Fora utilizado ferramentas como node e gulp. 
+Fora utilizado ferramentas como node e gulp.<br> 
 gulp: "É um JavaScript Task Runner"
 
 Em principio, para instalação dos modules do node, pode se criar uma pasta para conter o projeto, e, em seguida, via terminal/cmd executar o comando a seguir: (assumindo que o node já esteja instalado)
